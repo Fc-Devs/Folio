@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgSemanticModule } from 'ng-semantic';
 
-import { AppComponent } from './app.component';
+import { KnowComponent } from './know.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    KnowComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    NgSemanticModule 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [KnowComponent]
 })
 export class AppModule { }
