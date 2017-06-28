@@ -1,23 +1,42 @@
 <!--The whole content below can be removed with the new code.-->
 <div class="wallpaper" mouseWheel (mouseWheelUp)="mouseWheelUpFunc()" (mouseWheelDown)="mouseWheelDownFunc()">
-  <button md-fab class="btnMenu"><md-icon>menu</md-icon></button>
+  
+  <div class="container-titre">
+    <div class="line">
+      <hr><hr>
+    </div>
+    <span class="titre">Florian Correge</span>
+  </div>
+
+  <md-icon class="btnMenu">menu</md-icon>
 
   <div class="container">
-    <div class="txt-container">
-      <p class="txt">Fc-Devs</p>
-      <p class="txt">Développeur</p>
-      <p class="txt"> Multi-plateformes</p>     
-    </div>
-  </div>
 
-    <div class="container">
     <div class="txt-container">
-     <md-icon>desktop_windows</md-icon>
-     <md-icon>computer</md-icon>
-     <md-icon>tablet_android</md-icon>    
+      <p class="txt txt-anim-1">Freelance</p>
+      <p class="txt txt-anim-2">Développeur</p>
+      <p class="txt txt-anim-3"> Multi-plateformes</p>     
     </div>
-  </div>
 
+    <ul class="container-icons">
+        <li class="icons"><md-icon class="icon-normal">desktop_windows</md-icon></li>
+        <li class="icons"><md-icon class="icon-normal">computer</md-icon></li>
+        <li class="icons"><md-icon class="icon-medium">tablet_android</md-icon></li>
+        <li class="icons"><md-icon class="icon-small">smartphone</md-icon></li>  
+    </ul>
+
+    <div class="container-mouse">
+    <span class="scroll-btn">
+      <a href="#">
+		    <span class="mouse">
+			    <span>
+			    </span>
+		    </span>
+	    </a>
+    </span>
+    </div>
+
+  </div>
 </div>
 
 

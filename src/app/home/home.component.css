@@ -7,7 +7,47 @@
     position: absolute;
     height: 100%!important;
     width: 100%!important;
-    background-color:#143E92;       
+    background-color:white;       
+}
+
+/************
+    Titre
+************/
+.container-titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2F56A4;
+    width: auto;
+    height: 60px;
+    box-shadow: 0px 5px 30px #08253E;
+}
+
+.titre{
+    position: absolute;
+    top : 8px;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    background-color: #2F56A4;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 10;
+}
+
+.line{
+    position: absolute;
+    top : 25px;
+    font-size: 10px;
+    width: 100%;
+    z-index: 5;
+}
+
+.line hr{
+    margin: 5px;
+    padding: 0;
 }
 
 /************
@@ -18,7 +58,20 @@
     position: fixed;
     text-align: center;
     margin: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    color : #143E92;
+    -webkit-animation: menu 1s linear forwards;
+	-moz-animation: menu 1s linear forwards;
+	animation: menu 1s linear forwards;
 }
+
+.btnMenu:hover{
+    -webkit-animation: menu-swipe 1s linear forwards;
+	-moz-animation: menu-swipe 1s linear forwards;
+	animation: menu-swipe 1s linear forwards;
+}
+
 
 /************
    Content
@@ -30,20 +83,183 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .txt-container{
     text-align: center;
+    position: relative;
+    bottom : 15%;
 }
 
 .txt{
-    color: white;
+    position: relative;
+    color: #143E92;
     vertical-align: middle;
-    font-size: 25px;
+    font-size: 50px;
+    opacity: 0;
 }
 
-md-icon{
+.txt-anim-1{
+    -webkit-animation: textApearLeft 1s linear forwards;
+	-moz-animation: textApearLeft 1s linear forwards;
+	animation: textApearLeft 1s linear forwards;
+}
+
+.txt-anim-2{
+    -webkit-animation: textApearRight 1s linear forwards;
+	-moz-animation: textApearRight 1s linear forwards;
+	animation: textApearRight 1s linear forwards;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.txt-anim-3{
+    -webkit-animation: textApearLeft 1s linear forwards;
+	-moz-animation: textApearLeft 1s linear forwards;
+	animation: textApearLeft 1s linear forwards;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+/************
+    Icons
+************/
+
+.container-icons{
+    position: relative;
+    bottom : 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.icons{
+    width:auto;
+    height: auto;
+    list-style: none;
+}
+
+.icon-normal{
     font-size: 100px;
-    margin : 100px;
+        width: 100px;
+    font-size: 100px;
+    color :black;
 }
 
+.icon-medium{
+    font-size: 50px;
+        width: 50px;
+    color :black;
+}
+
+.icon-small{
+    font-size: 30px;
+        width: 30px;
+    color :black;
+}
+
+.container-mouse{
+    position: fixed;
+    bottom : 15%;
+}
+
+
+/***************
+   Animations
+***************/
+
+@keyframes textApearLeft {
+	0% {
+	    opacity: 0;
+	     right: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    right: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    right: 0%;
+	}
+}
+
+@-webkit-keyframes textApearLeft {
+    0% {
+	    opacity: 0;
+	     right: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    right: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    right: 0%;
+	}
+}
+
+
+@-moz-keyframes textApearLeft {
+	0% {
+	    opacity: 0;
+	     right: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    right: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    right: 0%;
+	}
+}
+
+@keyframes textApearRight {
+	0% {
+	    opacity: 0;
+	     left: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    left: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    left: 0%;
+	}
+}
+
+@-webkit-keyframes textApearRight {
+    0% {
+	    opacity: 0;
+	     left: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    left: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    left: 0%;
+	}
+}
+
+
+@-moz-keyframes textApearRight {
+	0% {
+	    opacity: 0;
+	     left: 100%;
+	}
+	15% {
+	    opacity: 0;
+	    left: 25%;
+	}
+	100% {
+	    opacity: 1;
+	    left: 0%;
+	}
+}

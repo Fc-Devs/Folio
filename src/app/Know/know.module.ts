@@ -15,4 +15,4 @@ import { KnowComponent } from './know.component';
   providers: [],
   bootstrap: [KnowComponent]
 })
-export class AppModule { }
+export class KnowModule { }
